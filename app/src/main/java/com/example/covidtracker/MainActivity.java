@@ -3,7 +3,6 @@ package com.example.covidtracker;
 import android.Manifest;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
-import android.util.Log;
 import android.view.View;
 import android.widget.Button;
 
@@ -58,7 +57,6 @@ public class MainActivity extends AppCompatActivity {
             list.add(str.getKey());
             i++;
         }
-        Log.e("ahmet",i+"");
         return list;
     }
 }

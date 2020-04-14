@@ -1,14 +1,11 @@
 package com.example.covidtracker.utils;
 
 import android.util.Log;
-import android.view.View;
-import android.widget.Button;
 import android.widget.TextView;
 
 import com.example.covidtracker.MainActivity;
 import com.example.covidtracker.R;
 
-import static com.example.covidtracker.MainActivity.setToList;
 
 public class ButtonActions {
 
@@ -27,7 +24,6 @@ public class ButtonActions {
 
 
         String value = MainActivity.strDataList.get(MainActivity.pageNumber);
-        Log.e("value",value + "||" + MainActivity.pageNumber) ;
         TextView header = MainActivity.instance.findViewById(R.id.header);
         TextView valueToBeSet = MainActivity.instance.findViewById(R.id.value);
         header.setText(value);
